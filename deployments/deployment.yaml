@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maven-ustsample-deployment
+  labels:
+    app: ust-sample-poc
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ust-sample-poc
+  template:
+    metadata:
+      labels:
+        app: ust-sample-poc
+    spec:
+      containers:
+      - name: maven-ustsample-deployment
+        image: pavansa/notes-app
+        resources:
+          requests:
+            cpu: "100m"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
