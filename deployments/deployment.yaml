@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: maven-ustsample-deployment
-        image: pavansa/notes-app
+        image: 682452625784.dkr.ecr.us-east-1.amazonaws.com/mavensample-app:latest
         resources:
           requests:
             cpu: "100m"

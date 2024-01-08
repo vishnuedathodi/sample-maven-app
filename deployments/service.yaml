@@ -7,7 +7,7 @@ metadata:
 spec:
  selector:
    # Selector for Pods
-   app: notes-app
+   app: mavensample-app
  ports:
    # Port Map
  - port: 80
