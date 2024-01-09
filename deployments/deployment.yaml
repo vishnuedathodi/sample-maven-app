@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ust-sample-poc
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ust-sample-poc
