@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: maven-ustsample-deployment
+  name: maven-ustsample-deployment-tekton
   labels:
     app: ust-sample-poc
 spec:
@@ -15,8 +15,8 @@ spec:
         app: ust-sample-poc
     spec:
       containers:
-      - name: maven-ustsample-deployment
-        image: 682452625784.dkr.ecr.us-east-1.amazonaws.com/mavensample-app:latest
+      - name: maven-ustsample-deployment-tekton
+        image: 682452625784.dkr.ecr.us-east-1.amazonaws.com/mavensample-app-tekton:latest
         resources:
           requests:
             cpu: "100m"
