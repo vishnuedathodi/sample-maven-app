@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: maven-ustsample-deployment
+  name: maven-ustsample-deployment-github
   labels:
     app: ust-sample-poc
 spec:
@@ -15,7 +15,7 @@ spec:
         app: ust-sample-poc
     spec:
       containers:
-      - name: maven-ustsample-deployment
+      - name: maven-ustsample-deployment-github
         image: 682452625784.dkr.ecr.us-east-1.amazonaws.com/mavensample-app:latest
         resources:
           requests:
